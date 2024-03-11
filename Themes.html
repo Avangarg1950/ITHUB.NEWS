@@ -28,7 +28,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #555;
+            background-color: #55555500;
             padding: 10px;
         }
 
@@ -38,7 +38,16 @@
             margin: 0 15px;
         }
         
+        a {
+    color: #00ff33; /* Цвет ссылки по умолчанию */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    transition: color 0.2s; /* Плавное изменение цвета ссылки */
+}
 
+/* Стиль для ссылки при наведении курсора */
+a:hover {
+    color: #000dff; /* Новый цвет ссылки при наведении */
+}
 
         main {
             padding-top: 20px;
