@@ -26,17 +26,26 @@
         }
 
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #55555500;
-            padding: 10px;
-        }
+    display: flex;
+    justify-content: center;
+    background-color: #55555500;
+    padding: 10px;
+    flex-direction: row; /* Устанавливаем направление flex в строку */
+    flex-wrap: nowrap; /* Отключаем перенос элементов на новую строку */
+}
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    nav a {
+        margin: 5px 15px;
+    }
+}
         
         a {
     color: #00ff33; /* Цвет ссылки по умолчанию */
@@ -83,10 +92,10 @@ a:hover {
     </header>
 
     <nav>
-       <p> <a href="index.html">Главная</a></p>
-       <p> <a href="Themes.html">Рубрики</a></p>
-       <p> <a href="NewsADD.html">Предложить новость</a></p>
-       <p>  <a href="about.html">О Сайте</a></p>
+       <a href="index.html">Главная</a>
+        <a href="Themes.html">Рубрики</a>
+       <a href="NewsADD.html">Предложить новость</a>
+         <a href="about.html">О Сайте</a>
         
     </nav>
 

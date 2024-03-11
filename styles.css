@@ -40,7 +40,8 @@ nav {
     justify-content: center;
     background-color: #555;
     padding: 10px;
-    flex-wrap: wrap;
+    flex-direction: row; /* Устанавливаем направление flex в строку */
+    flex-wrap: nowrap; /* Отключаем перенос элементов на новую строку */
 }
 
 nav a {
@@ -49,6 +50,12 @@ nav a {
     margin: 0 15px;
 }
 
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    nav a {
+        margin: 5px 15px;
+    }
+}
 main {
     padding-top: 20px;
 }
