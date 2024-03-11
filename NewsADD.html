@@ -36,24 +36,14 @@
             color: #fff;
             text-decoration: none;
             margin: 0 15px;
+            transition: color 0.2s;
         }
         
-        a {
-    color: #00ff33; /* Цвет ссылки по умолчанию */
-    text-decoration: none; /* Убираем подчеркивание ссылок */
-    transition: color 0.2s; /* Плавное изменение цвета ссылки */
-}
-a:hover {
-    color: #000dff; /* Новый цвет ссылки при наведении */
-}
-
- .a1:visited {color: #00ff33;
-    transition: color 0.2s;}
-    .a1 a:hover {
-    color: #000dff; /* Новый цвет ссылки при наведении */}
-    
-/* Стиль для ссылки при наведении курсора */
-
+        
+        nav a:hover {
+            color: #000dff;
+            transition: color 0.2s;
+        }
 
         main {
             padding-top: 20px;
@@ -61,6 +51,7 @@ a:hover {
 
         section {
             margin-bottom: 20px;
+            text-align:left; /* Центрируем текст в секции */
         }
 
         footer {
@@ -69,66 +60,58 @@ a:hover {
             text-align: center;
         }
 
+       
         /* Media queries for responsiveness */
         @media screen and (max-width: 600px) {
             nav {
-            display: flex;
-            justify-content: center;
-            background-color: #55555500;
-            padding: 10px;
-        }
+                display: flex;
+                justify-content: center;
+                background-color: #55555500;
+                padding: 10px;
+            }
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 15px;
+            }
         }
-        }
-        
+    
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>ITHUB.NEWS</h1>
-    </header>
+<header>
+    <h1>ITHUB.NEWS</h1>
+</header>
 
-    <nav>
-        <a href="index.html">Главная</a>
-         <a href="Themes.html">Рубрики</a>
-         <a href="NewsADD.html">Предложить новость</a>
-          <a href="about.html">О Сайте</a>
-    </nav>
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="Themes.html">Рубрики</a>
+    <a href="NewsADD.html">Предложить новость</a>
+    <a href="about.html">О Сайте</a>
+</nav>
 
-    <main>
-        <section>
-            
-            <h1><center>Предложите свою новость!</h1>
-            <p><center><h2>С нами можно связатся через бота на площадке Telegram.</h2></p>
-                
-        </section>
-        <section>
-            <h3>
-            <P>Правила добавления новостей:</P>
-            <p>1. Новость должна быть цензурной.</p>
-            <p>2.Новость не должна содержать запрещеных тем.</p>
-            <p>3.* Издательство оставляет за собой право не публиковать новость при не соблюдении пунктов выше.</p>
-            <p><center>Если вы ознакомились с правилами добавления новостей, то можете перейти в Telegram и предложить свою новость:</p>
-            <div class="a1"    <p><a href="https://t.me/Add_News_Ithub_bot" target="_blank">Перейти в Телеграм</a>
-                
-                    
-            </h3>
+<main>
+    <section>
+        <h1><center>Предложите свою новость!</h1>
+        <p><h1><center>С нами можно связаться через бота на площадке Telegram.</h1></p>
+    </section>
 
+    <section>
+        <h2>Правила добавления новостей:
+        <p>1. Новость должна быть цензурной.</p>
+        <p>2. Новость не должна содержать запрещенных тем.</p>
+        <p>3. * Издательство оставляет за собой право не публиковать новость при несоблюдении пунктов выше.</p>
+        <p><center>Если вы ознакомились с правилами добавления новостей, то можете перейти в Telegram и предложить свою новость:</p>
+       <p><a href="https://t.me/Add_News_Ithub_bot" target="_blank">Перейти в Телеграм</a></p>
+    </h2>
+    </section>
+</main>
 
-        </section>
-
-        <!-- Add more sections as needed -->
-
-    </main>
-
-    <footer>
-        <p>&copy; 2024 ITHUB.NEWS. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 ITHUB.NEWS. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
